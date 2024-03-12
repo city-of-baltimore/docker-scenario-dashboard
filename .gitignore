@@ -1,3 +1,2 @@
-volumes/public/apps/1/*
-volumes/public/signin-info.json
+volumes/public/*
 config.json

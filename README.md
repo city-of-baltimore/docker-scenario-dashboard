@@ -23,7 +23,9 @@ On the OAuth 2.0 tab, create a "New Application"
 
 Copy the client id from the newly created application
 
-create a file named config.json from the contents of .config.json.
+Copy the template .config.json to your active local config.json
+
+`cp .config.json config.json`
 
 Open config.json and paste the client id in:
 
