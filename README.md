@@ -5,11 +5,13 @@ A small docker instance with the [scenario widgets](https://github.com/city-of-b
 
 Note: Docker is required before beginning.
 
-`git clone https://github.com/city-of-baltimore/scenario-dashboard-docker.git`
+Navigate to: [https://github.com/city-of-baltimore/scenario-dashboard-widgets](https://github.com/city-of-baltimore/scenario-dashboard-widgets) and fork the repo into your github.
+
+Clone your forked repo to your local machine.
 
 `cd scenario-dashboard-docker`
 
-`git pull --recurse-submodules`
+`git submodule update --init --recursive`
 
 Create a developer account on [ArcGIS Online](https://arcgis.com)
 
@@ -20,6 +22,10 @@ Navigate to the [ArcGIS Developer Dashboard](https://developers.arcgis.com/dashb
 On the OAuth 2.0 tab, create a "New Application"
 
 Copy the client id from the newly created application
+
+Copy the template .config.json to your active local config.json
+
+`cp .config.json config.json`
 
 Open config.json and paste the client id in:
 
@@ -59,7 +65,9 @@ Note: It is recommended to position the map on the right of the screen and the d
 
 ## Contributing to this project
 
-To start, read the documentation in the [scenario widgets](https://github.com/city-of-baltimore/scenario-dashboard-widgets) repository. This repository will use the same contribution guidelines, of creating an issue and checking out a new branch named after the issue. 
+In order to contribute code push to your personal forked github version of the project then create PR's from here.
+
+Read the documentation in the [scenario widgets](https://github.com/city-of-baltimore/scenario-dashboard-widgets) repository. This repository will use the same contribution guidelines, of creating an issue and checking out a new branch named after the issue. 
 
 For submodule updates, the commit message should be "Widgets submodule update [current commit]".
 
